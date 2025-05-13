@@ -1,5 +1,4 @@
-- name: Instalar vim
-  ansible_python_interpreter: /usr/bin/python3
+- name: Install ntpdate
   ansible.builtin.package:
     name: vim
     state: present
