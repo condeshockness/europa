@@ -1,12 +1,12 @@
 - name: Instalar vim
   package:
-    name: {{vim}}
+    name: "{{ vim }}"
     state: present
   become: True
 
 - name: Instalar whois
   package:
-    name: {{whois}}
+    name: "{{ whois }}"
     state: present
   become: True
 
