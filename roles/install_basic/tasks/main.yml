@@ -1,4 +1,4 @@
-- name: Install ntpdate
+- name: Install vim
   ansible.builtin.package:
     name: vim
     state: present
