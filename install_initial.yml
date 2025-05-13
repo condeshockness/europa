@@ -1,6 +1,6 @@
 - hosts: site
   roles:
-  - install_basic
+  - install_initial
 
 
   
