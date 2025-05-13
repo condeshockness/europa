@@ -1,5 +1,5 @@
 - name: Instalando a ultima vesão dos pacotes Vim, nano, unzip, mtr,nmap,whois
-  hosts: servidor
+  hosts: site
   become: true
   tasks:
   - name: Instalando
