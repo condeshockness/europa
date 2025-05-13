@@ -1,0 +1,5 @@
+- name: Remove the user 'ansible'
+  ansible.builtin.user:
+    name: ansible
+    state: absent
+    remove: yes
