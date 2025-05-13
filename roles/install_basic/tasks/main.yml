@@ -1,0 +1,16 @@
+- name: Instalar vim
+  package:
+    name: {{vim}}
+    state: present
+  become: True
+
+- name: Instalar whois
+  package:
+    name: {{whois}}
+    state: present
+  become: True
+
+
+- name: Print installed version
+  debug:
+    msg: "Version {{ vim }} was installed."
