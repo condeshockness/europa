@@ -1,8 +1,8 @@
-- name: Add the user 'ansible' with a bash shell, appending the group 'admin' and 'developers' to the user's groups
+- name: Add the user 'ansible' with a bash shell, appending the group 'sudo' and 'developers' to the user's groups
   ansible.builtin.user:
     name: ansible
     shell: /bin/bash
-    groups: admin
+    groups: sudo
     append: yes
 
 - name: Set authorized key taken from file
