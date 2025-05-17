@@ -1,12 +1,8 @@
 - name: Instalando a ultima vesão dos pacotes Vim, nano, unzip, mtr,nmap,whois
   hosts: site
   become: true
-  #gather_facts: true
-  #become: yes
-  #become_user: ansible
-  #become_method: enable
   vars:
-    ansible_python_interpreter: /usr/bin/python3.11
+    ansible_python_interpreter: /usr/bin/python3
   tasks:
   - name: Instalando
     ansible.builtin.package:
